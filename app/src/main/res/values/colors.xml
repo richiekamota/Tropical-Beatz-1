@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#080808</color>
+    <color name="colorPrimaryDark">#20da28</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gold">#C9DA20</color>
+    <color name="yellowgreen">#9FDA20</color>
+    <color name="cyan">#20DA6C</color>
+    <color name="skyblue">#2077DA</color>
+    <color name="green">#20da28</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#E24419</color>
+    <color name="black">#273627</color>
+    <color name="colorCardStart">#25242b</color>
+    <color name="colorCardEnd">#bb25242b</color>
+    <color name="colorText">#74F40A</color>
+    <color name="colorTitleStart">#bb25242b</color>
+    <color name="colorTitleCenter">#25242b</color>
+    <color name="colorTitleEnd">#bb25242b</color>
+    <color name="colorRipple">#74F40A</color>
+    <color name="teagreen">#CCFB5D</color>
+</resources>
+

@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "151072564158",
+    "firebase_url": "https://tropical-beatz.firebaseio.com",
+    "project_id": "tropical-beatz",
+    "storage_bucket": "tropical-beatz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151072564158:android:0663b27c8e4b82aa",
+        "android_client_info": {
+          "package_name": "com.richmond.tropicalbeatz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "151072564158-liir8veseg5u81b4jamldrikvhpqqplk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.richmond.tropicalbeatz",
+            "certificate_hash": "cff23920357bbe94bcb1144d23c1e73d5220eb5a"
+          }
+        },
+        {
+          "client_id": "151072564158-sh0vg2uriqj0fcl13u6ht1ankvssh7aa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "151072564158-sh0vg2uriqj0fcl13u6ht1ankvssh7aa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhapMM3KJrwdHTVBIwNwSrBV4_71bNwG8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "151072564158-sh0vg2uriqj0fcl13u6ht1ankvssh7aa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

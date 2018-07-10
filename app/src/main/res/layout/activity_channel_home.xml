@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context="com.richmond.tropicalbeatz.ChannelHome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <include layout="@layout/progress_overlay"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/channelHeader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/visualiser_thumbnail"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imvArtistImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="131dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/flagbig144" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/visualiser_thumbnail"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvRadioName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="Channel Name"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            tools:textSize="20sp" />
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tvArtistInfo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:layout_marginTop="2dp"
+                                android:scrollHorizontally="true"
+                                android:text="Artist and Song"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                                tools:textSize="22sp" />
+                        </HorizontalScrollView>
+
+                        <TextView
+                            android:id="@+id/tvAlbumInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center"
+                            android:text="Album and Year"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            tools:textSize="22sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="9dp"
+                        android:layout_marginRight="9dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/wave_background">
+
+                        <SurfaceView
+                            android:id="@+id/sv_wave"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="2dp" />
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="1dp"
+                    android:animateLayoutChanges="true"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imvPlay"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="30dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="60dp"
+                        android:layout_weight="3"
+                        android:background="@drawable/channel_backgroundbutton"
+                        android:backgroundTint="@color/gold"
+                        app:srcCompat="@drawable/player"
+                        tools:padding="20dp" />
+
+                    <ImageButton
+                        android:id="@+id/imvPause"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="30dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="3"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/channel_backgroundbutton"
+                        android:backgroundTint="@color/gold"
+                        app:srcCompat="@drawable/pauser" />
+
+                    <ImageButton
+                        android:id="@+id/imvRevert"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="30dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="3"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/channel_backgroundbutton"
+                        android:backgroundTint="@color/gold"
+                        app:srcCompat="@drawable/back" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/adflight"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/wave_background">
+
+                        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/adView"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_gravity="center"
+                            ads:adSize="BANNER"
+                            ads:adUnitId="ca-app-pub-6035374685884193/9741299511">
+                        </com.google.android.gms.ads.AdView>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
